@@ -37,3 +37,59 @@ window.onscroll = function(){
 
     }
 }
+const logInBtns = document.querySelectorAll('.js_log-in')
+const signInBtns = document.querySelectorAll('.js_sign-in')
+const modalLogIn = document.querySelector('.modal_sign-in')
+const modalSignIn = document.querySelector('.modal_log-in')
+const modalMain = document.querySelector('.modal_main')
+const changeSignInBtn = document.querySelector('.js_change-sign-in')
+const changeLogInBtn = document.querySelector('.js_change-log-in')
+const stopProps = document.querySelectorAll('.js_stopProps')
+const backBtns = document.querySelectorAll('.js_back')
+
+changeLogInBtn.addEventListener('click', changeLogIn)
+changeSignInBtn.addEventListener('click', changeSignIn)
+for(const logInBtn of logInBtns){
+    logInBtn.addEventListener('click', openLogIn)
+}
+function openLogIn(){
+    modalMain.classList.add('open')
+    modalLogIn.classList.add('open_modal')
+    modalSignIn.classList.remove('open_modal')
+}
+for(const signInBtn of signInBtns){
+    signInBtn.addEventListener('click', openSignIn)
+}
+function openSignIn(){
+    modalMain.classList.add('open')
+    modalSignIn.classList.add('open_modal')
+    modalLogIn.classList.remove('open_modal')
+}
+
+function changeLogIn(){
+    modalLogIn.classList.add('open_modal')
+    modalSignIn.classList.remove('open_modal')
+
+}
+function changeSignIn(){
+    modalSignIn.classList.add('open_modal')
+    modalLogIn.classList.remove('open_modal')
+
+}
+for(const stopProp of stopProps){
+    stopProp.addEventListener('click', function(event){
+        event.stopPropagation()
+    })
+}
+modalMain.addEventListener('click', function(){
+    modalMain.classList.remove('open')
+    modalSignIn.classList.remove('open_modal')
+    modalLogIn.classList.remove('open_modal')
+})
+for(const backBtn of backBtns){
+    backBtn.addEventListener('click',function(){
+        modalMain.classList.remove('open')
+        modalSignIn.classList.remove('open_modal')
+        modalLogIn.classList.remove('open_modal')
+    })
+}

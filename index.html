@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/1d850e7f12.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./animation.css">
+    <link rel="icon" href="icon_path" type="image/icon type">
 </head>
 <body>
     <div id="header">
@@ -20,12 +21,12 @@
                 </div>
             </i>
             <li class="header_list_child">
-                Hình ảnh
+                Tài khoản
                 <i class="fa-solid fa-angle-down"></i>
                 <div class="header_list_sub">
                     <ul>
-                        <li>Thư viện ảnh</li>
-                        <li>Video</li>
+                        <li class="js_log-in">Đăng nhập</li>
+                        <li class="js_sign-in">Đăng ký</li>
                     </ul>
                 </div>
             </li>
@@ -70,7 +71,7 @@
                 <div class="header_list_sub">
                     <ul>
                         <li>Cơ cấu tổ chức</li>
-                        <li>Giới thiệu chung</li>
+                        <li><a href="./gioithieu.html">Giới thiệu chung</a></li>
                         <li>Thương hiệu</li>
                     </ul>
                 </div>
@@ -232,6 +233,69 @@
                 <i class="fa-brands fa-vimeo"></i>
                 <i class="fa-brands fa-vk"></i>
                 <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="modal_main">
+        <div class="modal_sign-in js_stopProps">
+            <div class="modal_main-header">
+                <h3>Đăng nhập</h3>
+                <h4 class="js_change-sign-in">Đăng ký</h4>
+            </div>
+            <div class="modal_main-input">
+                <input type="email" placeholder="Email/Số điện thoại">
+                <input type="password" placeholder="Mật khẩu">
+            </div>
+            <div class="modal_main-sub">
+                <h6 class="modal_main-sub-fade">Cần trợ giúp</h6>
+                <div class="modal_main-sub-separate"></div>
+                <h6 style="color: red;">Quên mật khẩu</h6>
+            </div>
+            <div class="modal_main-button">
+                <h5 class="modal_main-button-right">ĐĂNG NHẬP</h5>
+                <h5 class="modal_main-button-left js_back">TRỞ LẠI</h5>
+            </div>
+            <div class="modal_main-footer">
+                <div class="modal_main-footer-left">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <p>Đăng nhập với FaceBook</p>
+                </div>
+                <div class="modal_main-footer-right">
+                    <i class="fa-brands fa-google"></i>                    
+                    <p>Đăng nhập với Google</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal_log-in js_stopProps">
+            <div class="modal_main-header">
+                <h3>Đăng Ký</h3>
+                <h4 class="js_change-log-in">Đăng Nhập</h4>
+            </div>
+            <div class="modal_main-input">
+                <input type="email" placeholder="Email/Số điện thoại">
+                <input type="password" placeholder="Mật khẩu">
+                <input type="password" placeholder="Nhập lại mật khẩu">
+    
+            </div>
+            <div class="modal_main-desc">
+                Bằng việc đăng ký, bạn đồng ý với Giỏi về 
+                <a href="#">Điều khoản dịch vụ</a>
+                &
+                <a href="#">Chính sách bảo mật</a>
+            </div>
+            <div class="modal_main-button">
+                <h5 class="modal_main-button-right">ĐĂNG KÝ</h5>
+                <h5 class="modal_main-button-left js_back">TRỞ LẠI</h5>
+            </div>
+            <div class="modal_main-footer">
+                <div class="modal_main-footer-left">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <p>Kết nối với FaceBook</p>
+                </div>
+                <div class="modal_main-footer-right">
+                    <i class="fa-brands fa-google"></i>                    
+                    <p>Kết nối với Google</p>
+                </div>
             </div>
         </div>
     </div>
