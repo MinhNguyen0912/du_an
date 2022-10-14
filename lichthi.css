@@ -1,0 +1,50 @@
+.body_left h2{
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.body_left h3{
+    font-size: 20px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.body_left{
+    width: 70%;
+}
+.body_right{
+    width: 30%;
+}
+fieldset{
+    text-align: center;
+}
+fieldset legend{
+    text-align: left;
+}
+.c1,.c4{
+    width: 15%;
+}
+.c2,.c3,.c6{
+    width: 5%;
+}
+.c5{
+    width: 55%;
+    text-align: left;
+    padding-left: 8px;
+}
+
+th{
+    font-size: 14px;
+}
+td{
+    font-size: 12px;
+}
+.body_left h6{
+    text-align: left;
+    margin-top: 20px;
+    text-decoration: underline;
+    font-variant: small-caps;
+}
