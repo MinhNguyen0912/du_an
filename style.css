@@ -83,7 +83,6 @@ a{
     font-size: 12px;
     font-weight: 200;
     line-height: 40px;
-    padding-left: 12px;
     width: 100%;
 }
 .header_list_sub li a{
@@ -92,6 +91,8 @@ a{
     line-height: 40px;
     width: 100%;
     color: #000;
+    padding-left: 12px;
+    display: block;
 }
 .header_list_child:hover{
     background-color: rgb(155, 4, 4);
@@ -187,6 +188,12 @@ a{
 .body_review_left:hover img{
     transform: scale(1.1);
 }
+.body_review_content_2:hover{
+    text-decoration: underline;
+    text-shadow: 0 0 10px red;
+    cursor: pointer;
+}
+
 .body_review_content{
     z-index: 2;
     bottom: 0;
@@ -413,6 +420,23 @@ a{
     justify-content: center;
     align-items: center;
     display: none;
+    animation: fadeIn linear 0.2s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes scaleUp{
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 .open{
     display: flex;
@@ -425,12 +449,14 @@ a{
     background-color: #fff;
     border-radius: 5px;
     display: none;
+    animation: scaleUp ease 0.3s;
 }
 .modal_log-in{
     width: 45%;
     background-color: #fff;
     border-radius: 5px;
     display: none;
+    animation: scaleUp ease 0.3s;
 }
 .modal_main-header{
     display: flex;
@@ -569,5 +595,11 @@ a{
     font-size: 16px;
 }
 .disabled{
-    text-decoration: line-through;
+    cursor: default;
+    opacity: 0.6;
+    padding-left: 12px;
+}
+.disabled:hover{
+    background-color: #fff!important;
+    color: #000!important;
 }

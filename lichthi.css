@@ -48,3 +48,16 @@ td{
     text-decoration: underline;
     font-variant: small-caps;
 }
+fieldset li{
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    list-style-type: circle;
+    text-decoration: underline;
+    line-height: 20px;
+}
+fieldset>h6:last-child{
+    text-align: right;
+    font-size: 18px;
+    margin: 24px;
+}
